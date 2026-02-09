@@ -1,0 +1,16 @@
+# Editor
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# ROS / build artifacts
+build/
+install/
+log/
+
+# Graph / debug outputs
+*.gv
+*.pdf
+*.log
