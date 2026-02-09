@@ -64,3 +64,38 @@ Before using this package, please ensure that the **TurtleBot4 environment is pr
 
 > 🔗 **Reference:** [TurtleBot4 Official Documentation](https://turtlebot.github.io/turtlebot4-user-manual/)
 
+---
+
+## ⚙️ Quick Start
+
+Below are example terminal commands to **launch the simulation** and **run the exploration system**.  
+All commands are designed for **ROS 2 Humble** and **TurtleBot4 simulation**.
+
+
+1️⃣ Source ROS and workspace environment
+```bash
+source /opt/ros/humble/setup.bash
+source ~/muro_stack/muro_explore_platform/install/setup.bash
+```
+2️⃣ Launch single-robot simulation (Gazebo + RViz)
+```bash
+ros2 launch turtlebot4_ignition_bringup turtlebot4_ignition.launch.py world:=maze
+```
+3️⃣ Start slam module to get localization and mapping imformation
+```bash
+ros2 launch turtlebot4_navigation slam.launch.py
+```
+4️⃣ Start navigation module to get costmap and other navigatimg imfromations
+```bash
+ros2 launch turtlebot4_navigation nav2.launch.py
+```
+5️⃣ Start frontier-based automatically exploring script
+```bash 
+python3 ~/muro_stack/src/mapping/frontier_extraction/script1.py
+```
+6️⃣ Start RViz to observe the exploration process
+```bash
+rviz2 
+```
+
+---
