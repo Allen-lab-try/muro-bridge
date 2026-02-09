@@ -51,7 +51,7 @@ By separating **robot-local autonomy**, **system-level coordination**, and **clo
 
 
 <p align="center">
-  <img src="docs/muro-bridge_structure" width="800">
+  <img src="docs/muro-bridge_structure.jpg" width="800">
 </p>
 
 ---
